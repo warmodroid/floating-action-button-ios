@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Floating_button_menu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mo-ra-PEG" userLabel="c">
+                                <rect key="frame" x="329" y="532" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DSN-aW-NjP"/>
+                                    <constraint firstAttribute="height" constant="50" id="d5W-nn-BUz"/>
+                                </constraints>
+                                <state key="normal" image="c"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSV-nS-bHK" userLabel="b">
+                                <rect key="frame" x="329" y="612" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="gr5-x3-In7"/>
+                                    <constraint firstAttribute="height" constant="50" id="udJ-hA-Iac"/>
+                                </constraints>
+                                <state key="normal" image="b"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsO-is-QDa" userLabel="a">
+                                <rect key="frame" x="329" y="692" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ahs-0X-Y6z"/>
+                                    <constraint firstAttribute="width" constant="50" id="YIk-5R-xeP"/>
+                                </constraints>
+                                <state key="normal" image="a"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rep-Bu-YOA">
+                                <rect key="frame" x="324" y="772" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="LsL-yp-BQM"/>
+                                    <constraint firstAttribute="width" constant="60" id="RJr-r2-FLm"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.19258575347684537" blue="0.24598437017227637" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="+" image="more"/>
+                                <connections>
+                                    <action selector="didClickMoreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tL8-xm-QUX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Floating Action Button(FAB)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHM-GW-aEF">
+                                <rect key="frame" x="5" y="167" width="404" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.7693973183631897" green="0.39517898717015609" blue="0.35730190587792748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~ warmodroid tutorial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whU-lA-wJW">
+                                <rect key="frame" x="217" y="261" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PHM-GW-aEF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4dM-ro-QyB"/>
+                            <constraint firstItem="PHM-GW-aEF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="BOR-oj-o7j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rep-Bu-YOA" secondAttribute="trailing" constant="30" id="FNI-cl-fDi"/>
+                            <constraint firstItem="Rep-Bu-YOA" firstAttribute="top" secondItem="XsO-is-QDa" secondAttribute="bottom" constant="30" id="JOU-rs-KDE"/>
+                            <constraint firstItem="aSV-nS-bHK" firstAttribute="top" secondItem="3mo-ra-PEG" secondAttribute="bottom" constant="30" id="LmE-4n-cdO"/>
+                            <constraint firstAttribute="trailing" secondItem="PHM-GW-aEF" secondAttribute="trailing" constant="5" id="Rz6-V2-KDD"/>
+                            <constraint firstItem="whU-lA-wJW" firstAttribute="top" secondItem="PHM-GW-aEF" secondAttribute="bottom" constant="8" id="TsE-Zp-fVn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rep-Bu-YOA" secondAttribute="bottom" constant="30" id="UDi-w9-Lan"/>
+                            <constraint firstItem="PHM-GW-aEF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="VI8-St-dGR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="whU-lA-wJW" secondAttribute="trailing" constant="32" id="YyZ-nz-ViL"/>
+                            <constraint firstItem="whU-lA-wJW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="eC3-Gz-w0A"/>
+                            <constraint firstItem="XsO-is-QDa" firstAttribute="top" secondItem="aSV-nS-bHK" secondAttribute="bottom" constant="30" id="hnS-Xj-fEg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aSV-nS-bHK" secondAttribute="trailing" constant="35" id="oa1-iS-46e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XsO-is-QDa" secondAttribute="trailing" constant="35" id="q0b-K2-bIf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3mo-ra-PEG" secondAttribute="trailing" constant="35" id="xer-wS-lj6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="incognitoButton" destination="XsO-is-QDa" id="sAY-ff-ewt"/>
+                        <outlet property="mailButton" destination="3mo-ra-PEG" id="H57-aL-WVy"/>
+                        <outlet property="mobileButton" destination="aSV-nS-bHK" id="Dun-iU-GLy"/>
+                        <outlet property="moreButton" destination="Rep-Bu-YOA" id="hZS-XX-BdM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="a" width="640" height="640"/>
+        <image name="b" width="640" height="640"/>
+        <image name="c" width="640" height="640"/>
+        <image name="more" width="640" height="640"/>
+    </resources>
+</document>
